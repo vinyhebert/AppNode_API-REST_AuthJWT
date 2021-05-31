@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href=".//img/Oxygen-Icons.org-Oxygen-Apps-preferences-system-login (1).ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://localhost:4000/css/style.css">
+    <link rel="stylesheet" href="http://localhost:4000/css/bootstrap.css">
+
+</head>
+<body>
+   <div id="login-container">
+       <h1>Cadastro</h1>
+       <form action="/auth/register" method="POST">
+            <label for="name">Nome</label>
+            <input type="text" name="name" placeholder="Digite seu Nome">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu E-mail" autocomplete="off">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua Senha">
+            <input type="submit" value="Apply" onclick="enviar()">
+            <a href="/home">Login</a>
+       </form>
+   </div>
+</body>
+
+
+</html>
